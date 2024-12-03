@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(34, 36, 37);
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
