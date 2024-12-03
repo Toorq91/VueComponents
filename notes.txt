@@ -1,0 +1,35 @@
+Hva er en komponent?
+En komponent er en gjenbrukbar og isolert del av brukergrensesnittet. Komponenter hjelper deg å skrive renere, mer modulær og gjenbrukbar kode.
+
+Fordeler:
+* Kan bruke samme komponent flere steder uten å kopiere kode.
+* Hver komponent har eget data og logikk, noe som gir bedre struktur.
+* Oppdater en komponent én gang, og endringene reflekteres overalt.
+
+Eksempel:
+vm.component('hello', {
+    template: `<h1>{{ message }}</h1>`,
+    data() {
+        return {
+            message: 'Hello World!'
+        }
+    }
+})
+
+component('hello'): Registrerer en komponent kalt hello.
+template: Definerer hvordan komponenten ser ut i HTML.
+data: Hver komponentforekomst har sin egen isolerte message.
+
+I HTML:
+<hello></hello>
+<hello></hello>
+<hello></hello>
+
+I browser:
+<h1>Hello World!</h1>
+<h1>Hello World!</h1>
+<h1>Hello World!</h1>
+
+
+Hvorfor bruke komponenter?
+Komponenter brukes for å gjenbruke kode, dele opp store grensesnitt i mindre deler, og forbedre vedlikeholdbarheten.
